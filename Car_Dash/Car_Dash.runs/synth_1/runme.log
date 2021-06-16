@@ -1,0 +1,2079 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12372 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 362.934 ; gain = 100.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:3]
+	Parameter SCALE bound to: 100000000 - type: integer 
+	Parameter headStart1 bound to: 12 - type: integer 
+	Parameter headStart2 bound to: 4 - type: integer 
+	Parameter nextPlace bound to: 15 - type: integer 
+	Parameter headPlace bound to: 16 - type: integer 
+	Parameter tailPlace bound to: 17 - type: integer 
+	Parameter ROWS bound to: 16 - type: integer 
+	Parameter COLS bound to: 24 - type: integer 
+	Parameter MATRIX_TOTAL bound to: 384 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clk_scale' (1#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_5Hz' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v:20]
+	Parameter cntEndVal bound to: 24'b100110001001011010000000 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (2#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v:20]
+INFO: [Synth 8-6157] synthesizing module 'counter_100M' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'counter_100M' (3#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gen_rand_seq' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:2]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:35]
+WARNING: [Synth 8-6014] Unused sequential element rand1_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:37]
+WARNING: [Synth 8-6014] Unused sequential element rand2_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:42]
+WARNING: [Synth 8-6014] Unused sequential element rand3_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:47]
+WARNING: [Synth 8-6014] Unused sequential element rand4_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:52]
+WARNING: [Synth 8-6014] Unused sequential element rand5_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:57]
+WARNING: [Synth 8-6014] Unused sequential element rand6_reg was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'gen_rand_seq' (4#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v:2]
+INFO: [Synth 8-6157] synthesizing module 'moveCarImmunity' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v:3]
+	Parameter immuneCycles bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v:48]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'moveCarImmunity' (5#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v:27]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Wait bound to: 3'b010 
+	Parameter Check bound to: 3'b011 
+	Parameter Done bound to: 3'b100 
+	Parameter byteEndVal bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (6#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v:27]
+INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v:37]
+	Parameter Idle bound to: 2'b00 
+	Parameter Init bound to: 2'b01 
+	Parameter RxTx bound to: 2'b10 
+	Parameter Done bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (7#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v:37]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v:20]
+	Parameter cntEndVal bound to: 10'b1011101110 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (8#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (9#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'format' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'format' (10#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LED_matrix' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v:12]
+	Parameter HT1632_SYS_DIS bound to: 8'b00000000 
+	Parameter HT1632_SYS_EN bound to: 8'b00000001 
+	Parameter HT1632_LED_OFF bound to: 8'b00000010 
+	Parameter HT1632_LED_ON bound to: 8'b00000011 
+	Parameter HT1632_BLINK_OFF bound to: 8'b00001000 
+	Parameter HT1632_BLINK_ON bound to: 8'b00001001 
+	Parameter HT1632_SLAVE_MODE bound to: 8'b00010000 
+	Parameter HT1632_MASTER_MODE bound to: 8'b00010100 
+	Parameter HT1632_INT_RC bound to: 8'b00011000 
+	Parameter HT1632_EXT_CLK bound to: 8'b00011100 
+	Parameter HT1632_PWM_CONTROL bound to: 8'b10100000 
+	Parameter HT1632_COMMON_16NMOS bound to: 8'b00100100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'LED_matrix' (11#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v:12]
+INFO: [Synth 8-6157] synthesizing module 'segmain' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (12#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'segmain' (13#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:523]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:530]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:479]
+WARNING: [Synth 8-5856] 3D RAM game_matrix_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM matrix_to_send_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][23] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][22] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][21] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][20] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][19] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][18] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][17] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][16] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][15] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][14] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][13] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][12] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][11] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][10] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][9] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][8] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][7] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][6] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][5] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][4] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][3] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][2] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][1] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[15][0] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][23] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][22] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][21] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][20] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][19] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][18] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][17] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][16] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][15] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][14] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][13] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][12] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][11] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][10] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][9] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][8] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][7] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][6] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][5] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][4] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][3] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][2] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][1] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[14][0] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][23] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][22] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][21] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][20] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][19] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][18] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][17] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][16] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][15] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][14] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][13] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][12] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][11] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][10] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][9] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][8] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][7] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][6] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][5] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][4] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][3] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][2] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][1] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[13][0] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][23] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][22] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][21] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][20] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][19] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][18] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][17] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][16] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][15] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][14] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][13] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][12] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][11] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][10] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][9] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][8] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][7] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][6] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][5] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][4] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+WARNING: [Synth 8-6014] Unused sequential element matrix_to_send_reg[12][3] was removed.  [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:234]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net sndData in module/entity main does not have driver. [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'main' (14#1) [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:3]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[39]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[38]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[37]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[36]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[35]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[34]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[33]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[32]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[31]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[30]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[29]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[28]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[27]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[26]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[25]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[24]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[15]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[14]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[13]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[12]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[11]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[10]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[7]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[6]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[5]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[4]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[3]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[2]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[1]
+WARNING: [Synth 8-3331] design format has unconnected port jstkData[0]
+WARNING: [Synth 8-3331] design main has unconnected port SW[15]
+WARNING: [Synth 8-3331] design main has unconnected port SW[8]
+WARNING: [Synth 8-3331] design main has unconnected port SW[7]
+WARNING: [Synth 8-3331] design main has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 593.840 ; gain = 331.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[7] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[6] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[5] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[4] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[3] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[2] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[1] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+WARNING: [Synth 8-3295] tying undriven pin PmodJSTK_Int:DIN[0] to constant 0 [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:193]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 593.840 ; gain = 331.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 593.840 ; gain = 331.891
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1441.398 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1441.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1441.398 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1441.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'moveCarImmunity'
+INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'spiCtrl'
+INFO: [Synth 8-5544] ROM "SS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sndData" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmpSR" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DOUT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'spiMode0'
+INFO: [Synth 8-5544] ROM "BUSY" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "pState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "nbits_to_board" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cs" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "write" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "curr_seq_idx" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sequences" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sequences_nbits" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'segmain'
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_for_7seg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pos" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][0][31:0]' into 'game_matrix_reg[15][0][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][0][31:0]' into 'game_matrix_reg[15][0][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][0][31:0]' into 'game_matrix_reg[15][0][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][1][31:0]' into 'game_matrix_reg[15][1][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][1][31:0]' into 'game_matrix_reg[15][1][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][1][31:0]' into 'game_matrix_reg[15][1][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][2][31:0]' into 'game_matrix_reg[15][2][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][2][31:0]' into 'game_matrix_reg[15][2][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][2][31:0]' into 'game_matrix_reg[15][2][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][3][31:0]' into 'game_matrix_reg[15][3][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][3][31:0]' into 'game_matrix_reg[15][3][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][3][31:0]' into 'game_matrix_reg[15][3][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][4][31:0]' into 'game_matrix_reg[15][4][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][4][31:0]' into 'game_matrix_reg[15][4][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][4][31:0]' into 'game_matrix_reg[15][4][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][5][31:0]' into 'game_matrix_reg[15][5][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][5][31:0]' into 'game_matrix_reg[15][5][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][5][31:0]' into 'game_matrix_reg[15][5][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][6][31:0]' into 'game_matrix_reg[15][6][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][6][31:0]' into 'game_matrix_reg[15][6][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][6][31:0]' into 'game_matrix_reg[15][6][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][7][31:0]' into 'game_matrix_reg[15][7][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][7][31:0]' into 'game_matrix_reg[15][7][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][7][31:0]' into 'game_matrix_reg[15][7][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][8][31:0]' into 'game_matrix_reg[15][8][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][8][31:0]' into 'game_matrix_reg[15][8][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][8][31:0]' into 'game_matrix_reg[15][8][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][9][31:0]' into 'game_matrix_reg[15][9][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][9][31:0]' into 'game_matrix_reg[15][9][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][9][31:0]' into 'game_matrix_reg[15][9][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][10][31:0]' into 'game_matrix_reg[15][10][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][10][31:0]' into 'game_matrix_reg[15][10][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][10][31:0]' into 'game_matrix_reg[15][10][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][11][31:0]' into 'game_matrix_reg[15][11][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][11][31:0]' into 'game_matrix_reg[15][11][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][11][31:0]' into 'game_matrix_reg[15][11][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][12][31:0]' into 'game_matrix_reg[15][12][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][12][31:0]' into 'game_matrix_reg[15][12][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][12][31:0]' into 'game_matrix_reg[15][12][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][13][31:0]' into 'game_matrix_reg[15][13][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][13][31:0]' into 'game_matrix_reg[15][13][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][13][31:0]' into 'game_matrix_reg[15][13][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][14][31:0]' into 'game_matrix_reg[15][14][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][14][31:0]' into 'game_matrix_reg[15][14][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][14][31:0]' into 'game_matrix_reg[15][14][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[8][15][31:0]' into 'game_matrix_reg[15][15][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[7][15][31:0]' into 'game_matrix_reg[15][15][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-4471] merging register 'game_matrix_reg[0][15][31:0]' into 'game_matrix_reg[15][15][31:0]' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:101]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:96]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:95]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'main'
+INFO: [Synth 8-5544] ROM "game_matrix_reg[15][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[14][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[13][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[12][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[11][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[10][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[9][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[8][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[7][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[6][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[5][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[4][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[3][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[2][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[1][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix_reg[0][17]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seq" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "game_matrix" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_matrix" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                              000
+                  iSTATE |                               01 |                              001
+                 iSTATE0 |                               10 |                              010
+                 iSTATE2 |                               11 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'moveCarImmunity'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                            00001 |                              000
+                    Init |                            00010 |                              001
+                    Wait |                            00100 |                              010
+                   Check |                            01000 |                              011
+                    Done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pState_reg' using encoding 'one-hot' in module 'spiCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                    Init |                               01 |                               01
+                    RxTx |                               10 |                               10
+                    Done |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pState_reg' using encoding 'sequential' in module 'spiMode0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 | 00000000000000000000000000000000
+                 iSTATE0 |                               01 | 00000000000000000000000000000001
+                 iSTATE1 |                               10 | 00000000000000000000000000000010
+                 iSTATE2 |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'segmain'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE3 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE5 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'main'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:48 ; elapsed = 00:03:09 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |main__GB0     |           1|     45285|
+|2     |main__GB1     |           1|     12036|
+|3     |main__GB2     |           1|     16844|
+|4     |main__GB3     |           1|     30456|
+|5     |main__GB4     |           1|     34936|
+|6     |main__GB5     |           1|     40759|
+|7     |main__GB6     |           1|     50546|
+|8     |main__GB7     |           1|     45616|
+|9     |main__GB8     |           1|     17952|
+|10    |main__GB9     |           1|     52400|
+|11    |main__GB10    |           1|      6124|
+|12    |main__GB11    |           1|     20472|
+|13    |main__GB12    |           1|     43562|
+|14    |main__GB13    |           1|     30652|
+|15    |main__GB14    |           1|     23202|
+|16    |main__GB15    |           1|     40476|
+|17    |main__GB16    |           1|     16378|
+|18    |main__GB17    |           1|     16658|
+|19    |main__GB18    |           1|     25512|
+|20    |main__GB19    |           1|     34996|
+|21    |main__GB20    |           1|     45669|
+|22    |main__GB21    |           1|     18618|
+|23    |main__GB22    |           1|     18898|
+|24    |main__GB23    |           1|     20008|
+|25    |main__GB24    |           1|     48371|
+|26    |main__GB25    |           1|     40849|
+|27    |main__GB26    |           1|     20718|
+|28    |main__GB27    |           1|     21906|
+|29    |main__GB28    |           1|       224|
+|30    |main__GB29    |           1|     31178|
+|31    |main__GB30    |           1|     32748|
+|32    |main__GB31    |           1|     44516|
+|33    |main__GB32    |           1|     35382|
+|34    |main__GB33    |           1|     35072|
+|35    |main__GB34    |           1|     11444|
+|36    |main__GB35    |           1|     11374|
+|37    |main__GB36    |           1|     36012|
+|38    |main__GB37    |           1|     48266|
+|39    |main__GB38    |           1|     12354|
+|40    |main__GB39    |           1|     50116|
+|41    |main__GB40    |           1|     15353|
+|42    |main__GB41    |           1|      5905|
+|43    |main__GB42    |           1|      5905|
+|44    |main__GB43    |           1|      7086|
+|45    |main__GB44    |           1|      9448|
+|46    |main__GB45    |           1|     11810|
+|47    |main__GB46    |           1|     14172|
+|48    |main__GB47    |           1|     14172|
+|49    |main__GB48    |           1|      4724|
+|50    |main__GB49    |           1|     12991|
+|51    |main__GB50    |           1|      4724|
+|52    |main__GB51    |           1|      4724|
+|53    |main__GB52    |           1|     12991|
+|54    |main__GB53    |           1|      4724|
+|55    |main__GB54    |           1|      4724|
+|56    |main__GB55    |           1|      7086|
+|57    |main__GB56    |           1|     12991|
+|58    |main__GB57    |           1|      4724|
+|59    |main__GB58    |           1|      4724|
+|60    |main__GB59    |           1|      5905|
+|61    |main__GB60    |           1|     20843|
+|62    |main__GB61    |           1|     38952|
+|63    |main__GB62    |           1|     25842|
+|64    |main__GB63    |           1|     26318|
+|65    |main__GB64    |           1|     52994|
+|66    |main__GB65    |           1|     27018|
+|67    |main__GB66    |           1|     28476|
+|68    |main__GB67    |           1|     12991|
+|69    |main__GB68    |           1|      7086|
+|70    |main__GB69    |           1|     11810|
+|71    |main__GB70    |           1|      7086|
+|72    |main__GB71    |           1|     11245|
+|73    |main__GB72    |           1|     22663|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    394 Bit       Adders := 192   
+	   2 Input    393 Bit       Adders := 1     
+	   2 Input    391 Bit       Adders := 1     
+	   2 Input    389 Bit       Adders := 1     
+	   2 Input    387 Bit       Adders := 1     
+	   2 Input    385 Bit       Adders := 1     
+	   2 Input    383 Bit       Adders := 1     
+	   2 Input    381 Bit       Adders := 1     
+	   2 Input    379 Bit       Adders := 1     
+	   2 Input    377 Bit       Adders := 1     
+	   2 Input    375 Bit       Adders := 1     
+	   2 Input    373 Bit       Adders := 1     
+	   2 Input    371 Bit       Adders := 1     
+	   2 Input    369 Bit       Adders := 1     
+	   2 Input    367 Bit       Adders := 1     
+	   2 Input    365 Bit       Adders := 1     
+	   2 Input    363 Bit       Adders := 1     
+	   2 Input    361 Bit       Adders := 1     
+	   2 Input    359 Bit       Adders := 1     
+	   2 Input    357 Bit       Adders := 1     
+	   2 Input    355 Bit       Adders := 1     
+	   2 Input    353 Bit       Adders := 1     
+	   2 Input    351 Bit       Adders := 1     
+	   2 Input    349 Bit       Adders := 1     
+	   2 Input    347 Bit       Adders := 1     
+	   2 Input    345 Bit       Adders := 1     
+	   2 Input    343 Bit       Adders := 1     
+	   2 Input    341 Bit       Adders := 1     
+	   2 Input    339 Bit       Adders := 1     
+	   2 Input    337 Bit       Adders := 1     
+	   2 Input    335 Bit       Adders := 1     
+	   2 Input    333 Bit       Adders := 1     
+	   2 Input    331 Bit       Adders := 1     
+	   2 Input    329 Bit       Adders := 1     
+	   2 Input    327 Bit       Adders := 1     
+	   2 Input    325 Bit       Adders := 1     
+	   2 Input    323 Bit       Adders := 1     
+	   2 Input    321 Bit       Adders := 1     
+	   2 Input    319 Bit       Adders := 1     
+	   2 Input    317 Bit       Adders := 1     
+	   2 Input    315 Bit       Adders := 1     
+	   2 Input    313 Bit       Adders := 1     
+	   2 Input    311 Bit       Adders := 1     
+	   2 Input    309 Bit       Adders := 1     
+	   2 Input    307 Bit       Adders := 1     
+	   2 Input    305 Bit       Adders := 1     
+	   2 Input    303 Bit       Adders := 1     
+	   2 Input    301 Bit       Adders := 1     
+	   2 Input    299 Bit       Adders := 1     
+	   2 Input    297 Bit       Adders := 1     
+	   2 Input    295 Bit       Adders := 1     
+	   2 Input    293 Bit       Adders := 1     
+	   2 Input    291 Bit       Adders := 1     
+	   2 Input    289 Bit       Adders := 1     
+	   2 Input    287 Bit       Adders := 1     
+	   2 Input    285 Bit       Adders := 1     
+	   2 Input    283 Bit       Adders := 1     
+	   2 Input    281 Bit       Adders := 1     
+	   2 Input    279 Bit       Adders := 1     
+	   2 Input    277 Bit       Adders := 1     
+	   2 Input    275 Bit       Adders := 1     
+	   2 Input    273 Bit       Adders := 1     
+	   2 Input    271 Bit       Adders := 1     
+	   2 Input    269 Bit       Adders := 1     
+	   2 Input    267 Bit       Adders := 1     
+	   2 Input    265 Bit       Adders := 1     
+	   2 Input    263 Bit       Adders := 1     
+	   2 Input    261 Bit       Adders := 1     
+	   2 Input    259 Bit       Adders := 1     
+	   2 Input    257 Bit       Adders := 1     
+	   2 Input    255 Bit       Adders := 1     
+	   2 Input    253 Bit       Adders := 1     
+	   2 Input    251 Bit       Adders := 1     
+	   2 Input    249 Bit       Adders := 1     
+	   2 Input    247 Bit       Adders := 1     
+	   2 Input    245 Bit       Adders := 1     
+	   2 Input    243 Bit       Adders := 1     
+	   2 Input    241 Bit       Adders := 1     
+	   2 Input    239 Bit       Adders := 1     
+	   2 Input    237 Bit       Adders := 1     
+	   2 Input    235 Bit       Adders := 1     
+	   2 Input    233 Bit       Adders := 1     
+	   2 Input    231 Bit       Adders := 1     
+	   2 Input    229 Bit       Adders := 1     
+	   2 Input    227 Bit       Adders := 1     
+	   2 Input    225 Bit       Adders := 1     
+	   2 Input    223 Bit       Adders := 1     
+	   2 Input    221 Bit       Adders := 1     
+	   2 Input    219 Bit       Adders := 1     
+	   2 Input    217 Bit       Adders := 1     
+	   2 Input    215 Bit       Adders := 1     
+	   2 Input    213 Bit       Adders := 1     
+	   2 Input    211 Bit       Adders := 1     
+	   2 Input    209 Bit       Adders := 1     
+	   2 Input    207 Bit       Adders := 1     
+	   2 Input    205 Bit       Adders := 1     
+	   2 Input    203 Bit       Adders := 1     
+	   2 Input    201 Bit       Adders := 1     
+	   2 Input    199 Bit       Adders := 1     
+	   2 Input    197 Bit       Adders := 1     
+	   2 Input    195 Bit       Adders := 1     
+	   2 Input    193 Bit       Adders := 1     
+	   2 Input    191 Bit       Adders := 1     
+	   2 Input    189 Bit       Adders := 1     
+	   2 Input    187 Bit       Adders := 1     
+	   2 Input    185 Bit       Adders := 1     
+	   2 Input    183 Bit       Adders := 1     
+	   2 Input    181 Bit       Adders := 1     
+	   2 Input    179 Bit       Adders := 1     
+	   2 Input    177 Bit       Adders := 1     
+	   2 Input    175 Bit       Adders := 1     
+	   2 Input    173 Bit       Adders := 1     
+	   2 Input    171 Bit       Adders := 1     
+	   2 Input    169 Bit       Adders := 1     
+	   2 Input    167 Bit       Adders := 1     
+	   2 Input    165 Bit       Adders := 1     
+	   2 Input    163 Bit       Adders := 1     
+	   2 Input    161 Bit       Adders := 1     
+	   2 Input    159 Bit       Adders := 1     
+	   2 Input    157 Bit       Adders := 1     
+	   2 Input    155 Bit       Adders := 1     
+	   2 Input    153 Bit       Adders := 1     
+	   2 Input    151 Bit       Adders := 1     
+	   2 Input    149 Bit       Adders := 1     
+	   2 Input    147 Bit       Adders := 1     
+	   2 Input    145 Bit       Adders := 1     
+	   2 Input    143 Bit       Adders := 1     
+	   2 Input    141 Bit       Adders := 1     
+	   2 Input    139 Bit       Adders := 1     
+	   2 Input    137 Bit       Adders := 1     
+	   2 Input    135 Bit       Adders := 1     
+	   2 Input    133 Bit       Adders := 1     
+	   2 Input    131 Bit       Adders := 1     
+	   2 Input    129 Bit       Adders := 1     
+	   2 Input    127 Bit       Adders := 1     
+	   2 Input    125 Bit       Adders := 1     
+	   2 Input    123 Bit       Adders := 1     
+	   2 Input    121 Bit       Adders := 1     
+	   2 Input    119 Bit       Adders := 1     
+	   2 Input    117 Bit       Adders := 1     
+	   2 Input    115 Bit       Adders := 1     
+	   2 Input    113 Bit       Adders := 1     
+	   2 Input    111 Bit       Adders := 1     
+	   2 Input    109 Bit       Adders := 1     
+	   2 Input    107 Bit       Adders := 1     
+	   2 Input    105 Bit       Adders := 1     
+	   2 Input    103 Bit       Adders := 1     
+	   2 Input    101 Bit       Adders := 1     
+	   2 Input     99 Bit       Adders := 1     
+	   2 Input     97 Bit       Adders := 1     
+	   2 Input     95 Bit       Adders := 1     
+	   2 Input     93 Bit       Adders := 1     
+	   2 Input     91 Bit       Adders := 1     
+	   2 Input     89 Bit       Adders := 1     
+	   2 Input     87 Bit       Adders := 1     
+	   2 Input     85 Bit       Adders := 1     
+	   2 Input     83 Bit       Adders := 1     
+	   2 Input     81 Bit       Adders := 1     
+	   2 Input     79 Bit       Adders := 1     
+	   2 Input     77 Bit       Adders := 1     
+	   2 Input     75 Bit       Adders := 1     
+	   2 Input     73 Bit       Adders := 1     
+	   2 Input     71 Bit       Adders := 1     
+	   2 Input     69 Bit       Adders := 1     
+	   2 Input     67 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 1     
+	   2 Input     63 Bit       Adders := 1     
+	   2 Input     61 Bit       Adders := 1     
+	   2 Input     59 Bit       Adders := 1     
+	   2 Input     57 Bit       Adders := 1     
+	   2 Input     55 Bit       Adders := 1     
+	   2 Input     53 Bit       Adders := 1     
+	   2 Input     51 Bit       Adders := 1     
+	   2 Input     49 Bit       Adders := 1     
+	   2 Input     47 Bit       Adders := 1     
+	   2 Input     45 Bit       Adders := 1     
+	   2 Input     43 Bit       Adders := 1     
+	   2 Input     41 Bit       Adders := 1     
+	   2 Input     39 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              394 Bit    Registers := 2     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 341   
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input    394 Bit        Muxes := 1     
+	   2 Input    393 Bit        Muxes := 1     
+	   2 Input    391 Bit        Muxes := 1     
+	   2 Input    389 Bit        Muxes := 1     
+	   2 Input    387 Bit        Muxes := 1     
+	   2 Input    385 Bit        Muxes := 1     
+	   2 Input    383 Bit        Muxes := 1     
+	   2 Input    381 Bit        Muxes := 1     
+	   2 Input    379 Bit        Muxes := 1     
+	   2 Input    377 Bit        Muxes := 1     
+	   2 Input    375 Bit        Muxes := 1     
+	   2 Input    373 Bit        Muxes := 1     
+	   2 Input    371 Bit        Muxes := 1     
+	   2 Input    369 Bit        Muxes := 1     
+	   2 Input    367 Bit        Muxes := 1     
+	   2 Input    365 Bit        Muxes := 1     
+	   2 Input    363 Bit        Muxes := 1     
+	   2 Input    361 Bit        Muxes := 1     
+	   2 Input    359 Bit        Muxes := 1     
+	   2 Input    357 Bit        Muxes := 1     
+	   2 Input    355 Bit        Muxes := 1     
+	   2 Input    353 Bit        Muxes := 1     
+	   2 Input    351 Bit        Muxes := 1     
+	   2 Input    349 Bit        Muxes := 1     
+	   2 Input    347 Bit        Muxes := 1     
+	   2 Input    345 Bit        Muxes := 1     
+	   2 Input    343 Bit        Muxes := 1     
+	   2 Input    341 Bit        Muxes := 1     
+	   2 Input    339 Bit        Muxes := 1     
+	   2 Input    337 Bit        Muxes := 1     
+	   2 Input    335 Bit        Muxes := 1     
+	   2 Input    333 Bit        Muxes := 1     
+	   2 Input    331 Bit        Muxes := 1     
+	   2 Input    329 Bit        Muxes := 1     
+	   2 Input    327 Bit        Muxes := 1     
+	   2 Input    325 Bit        Muxes := 1     
+	   2 Input    323 Bit        Muxes := 1     
+	   2 Input    321 Bit        Muxes := 1     
+	   2 Input    319 Bit        Muxes := 1     
+	   2 Input    317 Bit        Muxes := 1     
+	   2 Input    315 Bit        Muxes := 1     
+	   2 Input    313 Bit        Muxes := 1     
+	   2 Input    311 Bit        Muxes := 1     
+	   2 Input    309 Bit        Muxes := 1     
+	   2 Input    307 Bit        Muxes := 1     
+	   2 Input    305 Bit        Muxes := 1     
+	   2 Input    303 Bit        Muxes := 1     
+	   2 Input    301 Bit        Muxes := 1     
+	   2 Input    299 Bit        Muxes := 1     
+	   2 Input    297 Bit        Muxes := 1     
+	   2 Input    295 Bit        Muxes := 1     
+	   2 Input    293 Bit        Muxes := 1     
+	   2 Input    291 Bit        Muxes := 1     
+	   2 Input    289 Bit        Muxes := 1     
+	   2 Input    287 Bit        Muxes := 1     
+	   2 Input    285 Bit        Muxes := 1     
+	   2 Input    283 Bit        Muxes := 1     
+	   2 Input    281 Bit        Muxes := 1     
+	   2 Input    279 Bit        Muxes := 1     
+	   2 Input    277 Bit        Muxes := 1     
+	   2 Input    275 Bit        Muxes := 1     
+	   2 Input    273 Bit        Muxes := 1     
+	   2 Input    271 Bit        Muxes := 1     
+	   2 Input    269 Bit        Muxes := 1     
+	   2 Input    267 Bit        Muxes := 1     
+	   2 Input    265 Bit        Muxes := 1     
+	   2 Input    263 Bit        Muxes := 1     
+	   2 Input    261 Bit        Muxes := 1     
+	   2 Input    259 Bit        Muxes := 1     
+	   2 Input    257 Bit        Muxes := 1     
+	   2 Input    255 Bit        Muxes := 1     
+	   2 Input    253 Bit        Muxes := 1     
+	   2 Input    251 Bit        Muxes := 1     
+	   2 Input    249 Bit        Muxes := 1     
+	   2 Input    247 Bit        Muxes := 1     
+	   2 Input    245 Bit        Muxes := 1     
+	   2 Input    243 Bit        Muxes := 1     
+	   2 Input    241 Bit        Muxes := 1     
+	   2 Input    239 Bit        Muxes := 1     
+	   2 Input    237 Bit        Muxes := 1     
+	   2 Input    235 Bit        Muxes := 1     
+	   2 Input    233 Bit        Muxes := 1     
+	   2 Input    231 Bit        Muxes := 1     
+	   2 Input    229 Bit        Muxes := 1     
+	   2 Input    227 Bit        Muxes := 1     
+	   2 Input    225 Bit        Muxes := 1     
+	   2 Input    223 Bit        Muxes := 1     
+	   2 Input    221 Bit        Muxes := 1     
+	   2 Input    219 Bit        Muxes := 1     
+	   2 Input    217 Bit        Muxes := 1     
+	   2 Input    215 Bit        Muxes := 1     
+	   2 Input    213 Bit        Muxes := 1     
+	   2 Input    211 Bit        Muxes := 1     
+	   2 Input    209 Bit        Muxes := 1     
+	   2 Input    207 Bit        Muxes := 1     
+	   2 Input    205 Bit        Muxes := 1     
+	   2 Input    203 Bit        Muxes := 1     
+	   2 Input    201 Bit        Muxes := 1     
+	   2 Input    199 Bit        Muxes := 1     
+	   2 Input    197 Bit        Muxes := 1     
+	   2 Input    195 Bit        Muxes := 1     
+	   2 Input    193 Bit        Muxes := 1     
+	   2 Input    191 Bit        Muxes := 1     
+	   2 Input    189 Bit        Muxes := 1     
+	   2 Input    187 Bit        Muxes := 1     
+	   2 Input    185 Bit        Muxes := 1     
+	   2 Input    183 Bit        Muxes := 1     
+	   2 Input    181 Bit        Muxes := 1     
+	   2 Input    179 Bit        Muxes := 1     
+	   2 Input    177 Bit        Muxes := 1     
+	   2 Input    175 Bit        Muxes := 1     
+	   2 Input    173 Bit        Muxes := 1     
+	   2 Input    171 Bit        Muxes := 1     
+	   2 Input    169 Bit        Muxes := 1     
+	   2 Input    167 Bit        Muxes := 1     
+	   2 Input    165 Bit        Muxes := 1     
+	   2 Input    163 Bit        Muxes := 1     
+	   2 Input    161 Bit        Muxes := 1     
+	   2 Input    159 Bit        Muxes := 1     
+	   2 Input    157 Bit        Muxes := 1     
+	   2 Input    155 Bit        Muxes := 1     
+	   2 Input    153 Bit        Muxes := 1     
+	   2 Input    151 Bit        Muxes := 1     
+	   2 Input    149 Bit        Muxes := 1     
+	   2 Input    147 Bit        Muxes := 1     
+	   2 Input    145 Bit        Muxes := 1     
+	   2 Input    143 Bit        Muxes := 1     
+	   2 Input    141 Bit        Muxes := 1     
+	   2 Input    139 Bit        Muxes := 1     
+	   2 Input    137 Bit        Muxes := 1     
+	   2 Input    135 Bit        Muxes := 1     
+	   2 Input    133 Bit        Muxes := 1     
+	   2 Input    131 Bit        Muxes := 1     
+	   2 Input    129 Bit        Muxes := 1     
+	   2 Input    127 Bit        Muxes := 1     
+	   2 Input    125 Bit        Muxes := 1     
+	   2 Input    123 Bit        Muxes := 1     
+	   2 Input    121 Bit        Muxes := 1     
+	   2 Input    119 Bit        Muxes := 1     
+	   2 Input    117 Bit        Muxes := 1     
+	   2 Input    115 Bit        Muxes := 1     
+	   2 Input    113 Bit        Muxes := 1     
+	   2 Input    111 Bit        Muxes := 1     
+	   2 Input    109 Bit        Muxes := 1     
+	   2 Input    107 Bit        Muxes := 1     
+	   2 Input    105 Bit        Muxes := 1     
+	   2 Input    103 Bit        Muxes := 1     
+	   2 Input    101 Bit        Muxes := 1     
+	   2 Input     99 Bit        Muxes := 1     
+	   2 Input     97 Bit        Muxes := 1     
+	   2 Input     95 Bit        Muxes := 1     
+	   2 Input     93 Bit        Muxes := 1     
+	   2 Input     91 Bit        Muxes := 1     
+	   2 Input     89 Bit        Muxes := 1     
+	   2 Input     87 Bit        Muxes := 1     
+	   2 Input     85 Bit        Muxes := 1     
+	   2 Input     83 Bit        Muxes := 1     
+	   2 Input     81 Bit        Muxes := 1     
+	   2 Input     79 Bit        Muxes := 1     
+	   2 Input     77 Bit        Muxes := 1     
+	   2 Input     75 Bit        Muxes := 1     
+	   2 Input     73 Bit        Muxes := 1     
+	   2 Input     71 Bit        Muxes := 1     
+	   2 Input     69 Bit        Muxes := 1     
+	   2 Input     67 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     57 Bit        Muxes := 1     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+	   2 Input     43 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   5 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 158   
+	   7 Input     32 Bit        Muxes := 34    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	  10 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 223   
+	   5 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 17    
+	   7 Input      1 Bit        Muxes := 33    
+	   9 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    394 Bit       Adders := 192   
+	   2 Input    393 Bit       Adders := 1     
+	   2 Input    391 Bit       Adders := 1     
+	   2 Input    389 Bit       Adders := 1     
+	   2 Input    387 Bit       Adders := 1     
+	   2 Input    385 Bit       Adders := 1     
+	   2 Input    383 Bit       Adders := 1     
+	   2 Input    381 Bit       Adders := 1     
+	   2 Input    379 Bit       Adders := 1     
+	   2 Input    377 Bit       Adders := 1     
+	   2 Input    375 Bit       Adders := 1     
+	   2 Input    373 Bit       Adders := 1     
+	   2 Input    371 Bit       Adders := 1     
+	   2 Input    369 Bit       Adders := 1     
+	   2 Input    367 Bit       Adders := 1     
+	   2 Input    365 Bit       Adders := 1     
+	   2 Input    363 Bit       Adders := 1     
+	   2 Input    361 Bit       Adders := 1     
+	   2 Input    359 Bit       Adders := 1     
+	   2 Input    357 Bit       Adders := 1     
+	   2 Input    355 Bit       Adders := 1     
+	   2 Input    353 Bit       Adders := 1     
+	   2 Input    351 Bit       Adders := 1     
+	   2 Input    349 Bit       Adders := 1     
+	   2 Input    347 Bit       Adders := 1     
+	   2 Input    345 Bit       Adders := 1     
+	   2 Input    343 Bit       Adders := 1     
+	   2 Input    341 Bit       Adders := 1     
+	   2 Input    339 Bit       Adders := 1     
+	   2 Input    337 Bit       Adders := 1     
+	   2 Input    335 Bit       Adders := 1     
+	   2 Input    333 Bit       Adders := 1     
+	   2 Input    331 Bit       Adders := 1     
+	   2 Input    329 Bit       Adders := 1     
+	   2 Input    327 Bit       Adders := 1     
+	   2 Input    325 Bit       Adders := 1     
+	   2 Input    323 Bit       Adders := 1     
+	   2 Input    321 Bit       Adders := 1     
+	   2 Input    319 Bit       Adders := 1     
+	   2 Input    317 Bit       Adders := 1     
+	   2 Input    315 Bit       Adders := 1     
+	   2 Input    313 Bit       Adders := 1     
+	   2 Input    311 Bit       Adders := 1     
+	   2 Input    309 Bit       Adders := 1     
+	   2 Input    307 Bit       Adders := 1     
+	   2 Input    305 Bit       Adders := 1     
+	   2 Input    303 Bit       Adders := 1     
+	   2 Input    301 Bit       Adders := 1     
+	   2 Input    299 Bit       Adders := 1     
+	   2 Input    297 Bit       Adders := 1     
+	   2 Input    295 Bit       Adders := 1     
+	   2 Input    293 Bit       Adders := 1     
+	   2 Input    291 Bit       Adders := 1     
+	   2 Input    289 Bit       Adders := 1     
+	   2 Input    287 Bit       Adders := 1     
+	   2 Input    285 Bit       Adders := 1     
+	   2 Input    283 Bit       Adders := 1     
+	   2 Input    281 Bit       Adders := 1     
+	   2 Input    279 Bit       Adders := 1     
+	   2 Input    277 Bit       Adders := 1     
+	   2 Input    275 Bit       Adders := 1     
+	   2 Input    273 Bit       Adders := 1     
+	   2 Input    271 Bit       Adders := 1     
+	   2 Input    269 Bit       Adders := 1     
+	   2 Input    267 Bit       Adders := 1     
+	   2 Input    265 Bit       Adders := 1     
+	   2 Input    263 Bit       Adders := 1     
+	   2 Input    261 Bit       Adders := 1     
+	   2 Input    259 Bit       Adders := 1     
+	   2 Input    257 Bit       Adders := 1     
+	   2 Input    255 Bit       Adders := 1     
+	   2 Input    253 Bit       Adders := 1     
+	   2 Input    251 Bit       Adders := 1     
+	   2 Input    249 Bit       Adders := 1     
+	   2 Input    247 Bit       Adders := 1     
+	   2 Input    245 Bit       Adders := 1     
+	   2 Input    243 Bit       Adders := 1     
+	   2 Input    241 Bit       Adders := 1     
+	   2 Input    239 Bit       Adders := 1     
+	   2 Input    237 Bit       Adders := 1     
+	   2 Input    235 Bit       Adders := 1     
+	   2 Input    233 Bit       Adders := 1     
+	   2 Input    231 Bit       Adders := 1     
+	   2 Input    229 Bit       Adders := 1     
+	   2 Input    227 Bit       Adders := 1     
+	   2 Input    225 Bit       Adders := 1     
+	   2 Input    223 Bit       Adders := 1     
+	   2 Input    221 Bit       Adders := 1     
+	   2 Input    219 Bit       Adders := 1     
+	   2 Input    217 Bit       Adders := 1     
+	   2 Input    215 Bit       Adders := 1     
+	   2 Input    213 Bit       Adders := 1     
+	   2 Input    211 Bit       Adders := 1     
+	   2 Input    209 Bit       Adders := 1     
+	   2 Input    207 Bit       Adders := 1     
+	   2 Input    205 Bit       Adders := 1     
+	   2 Input    203 Bit       Adders := 1     
+	   2 Input    201 Bit       Adders := 1     
+	   2 Input    199 Bit       Adders := 1     
+	   2 Input    197 Bit       Adders := 1     
+	   2 Input    195 Bit       Adders := 1     
+	   2 Input    193 Bit       Adders := 1     
+	   2 Input    191 Bit       Adders := 1     
+	   2 Input    189 Bit       Adders := 1     
+	   2 Input    187 Bit       Adders := 1     
+	   2 Input    185 Bit       Adders := 1     
+	   2 Input    183 Bit       Adders := 1     
+	   2 Input    181 Bit       Adders := 1     
+	   2 Input    179 Bit       Adders := 1     
+	   2 Input    177 Bit       Adders := 1     
+	   2 Input    175 Bit       Adders := 1     
+	   2 Input    173 Bit       Adders := 1     
+	   2 Input    171 Bit       Adders := 1     
+	   2 Input    169 Bit       Adders := 1     
+	   2 Input    167 Bit       Adders := 1     
+	   2 Input    165 Bit       Adders := 1     
+	   2 Input    163 Bit       Adders := 1     
+	   2 Input    161 Bit       Adders := 1     
+	   2 Input    159 Bit       Adders := 1     
+	   2 Input    157 Bit       Adders := 1     
+	   2 Input    155 Bit       Adders := 1     
+	   2 Input    153 Bit       Adders := 1     
+	   2 Input    151 Bit       Adders := 1     
+	   2 Input    149 Bit       Adders := 1     
+	   2 Input    147 Bit       Adders := 1     
+	   2 Input    145 Bit       Adders := 1     
+	   2 Input    143 Bit       Adders := 1     
+	   2 Input    141 Bit       Adders := 1     
+	   2 Input    139 Bit       Adders := 1     
+	   2 Input    137 Bit       Adders := 1     
+	   2 Input    135 Bit       Adders := 1     
+	   2 Input    133 Bit       Adders := 1     
+	   2 Input    131 Bit       Adders := 1     
+	   2 Input    129 Bit       Adders := 1     
+	   2 Input    127 Bit       Adders := 1     
+	   2 Input    125 Bit       Adders := 1     
+	   2 Input    123 Bit       Adders := 1     
+	   2 Input    121 Bit       Adders := 1     
+	   2 Input    119 Bit       Adders := 1     
+	   2 Input    117 Bit       Adders := 1     
+	   2 Input    115 Bit       Adders := 1     
+	   2 Input    113 Bit       Adders := 1     
+	   2 Input    111 Bit       Adders := 1     
+	   2 Input    109 Bit       Adders := 1     
+	   2 Input    107 Bit       Adders := 1     
+	   2 Input    105 Bit       Adders := 1     
+	   2 Input    103 Bit       Adders := 1     
+	   2 Input    101 Bit       Adders := 1     
+	   2 Input     99 Bit       Adders := 1     
+	   2 Input     97 Bit       Adders := 1     
+	   2 Input     95 Bit       Adders := 1     
+	   2 Input     93 Bit       Adders := 1     
+	   2 Input     91 Bit       Adders := 1     
+	   2 Input     89 Bit       Adders := 1     
+	   2 Input     87 Bit       Adders := 1     
+	   2 Input     85 Bit       Adders := 1     
+	   2 Input     83 Bit       Adders := 1     
+	   2 Input     81 Bit       Adders := 1     
+	   2 Input     79 Bit       Adders := 1     
+	   2 Input     77 Bit       Adders := 1     
+	   2 Input     75 Bit       Adders := 1     
+	   2 Input     73 Bit       Adders := 1     
+	   2 Input     71 Bit       Adders := 1     
+	   2 Input     69 Bit       Adders := 1     
+	   2 Input     67 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 1     
+	   2 Input     63 Bit       Adders := 1     
+	   2 Input     61 Bit       Adders := 1     
+	   2 Input     59 Bit       Adders := 1     
+	   2 Input     57 Bit       Adders := 1     
+	   2 Input     55 Bit       Adders := 1     
+	   2 Input     53 Bit       Adders := 1     
+	   2 Input     51 Bit       Adders := 1     
+	   2 Input     49 Bit       Adders := 1     
+	   2 Input     47 Bit       Adders := 1     
+	   2 Input     45 Bit       Adders := 1     
+	   2 Input     43 Bit       Adders := 1     
+	   2 Input     41 Bit       Adders := 1     
+	   2 Input     39 Bit       Adders := 1     
+	   2 Input     37 Bit       Adders := 1     
+	   2 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              394 Bit    Registers := 1     
+	               32 Bit    Registers := 336   
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    393 Bit        Muxes := 1     
+	   2 Input    391 Bit        Muxes := 1     
+	   2 Input    389 Bit        Muxes := 1     
+	   2 Input    387 Bit        Muxes := 1     
+	   2 Input    385 Bit        Muxes := 1     
+	   2 Input    383 Bit        Muxes := 1     
+	   2 Input    381 Bit        Muxes := 1     
+	   2 Input    379 Bit        Muxes := 1     
+	   2 Input    377 Bit        Muxes := 1     
+	   2 Input    375 Bit        Muxes := 1     
+	   2 Input    373 Bit        Muxes := 1     
+	   2 Input    371 Bit        Muxes := 1     
+	   2 Input    369 Bit        Muxes := 1     
+	   2 Input    367 Bit        Muxes := 1     
+	   2 Input    365 Bit        Muxes := 1     
+	   2 Input    363 Bit        Muxes := 1     
+	   2 Input    361 Bit        Muxes := 1     
+	   2 Input    359 Bit        Muxes := 1     
+	   2 Input    357 Bit        Muxes := 1     
+	   2 Input    355 Bit        Muxes := 1     
+	   2 Input    353 Bit        Muxes := 1     
+	   2 Input    351 Bit        Muxes := 1     
+	   2 Input    349 Bit        Muxes := 1     
+	   2 Input    347 Bit        Muxes := 1     
+	   2 Input    345 Bit        Muxes := 1     
+	   2 Input    343 Bit        Muxes := 1     
+	   2 Input    341 Bit        Muxes := 1     
+	   2 Input    339 Bit        Muxes := 1     
+	   2 Input    337 Bit        Muxes := 1     
+	   2 Input    335 Bit        Muxes := 1     
+	   2 Input    333 Bit        Muxes := 1     
+	   2 Input    331 Bit        Muxes := 1     
+	   2 Input    329 Bit        Muxes := 1     
+	   2 Input    327 Bit        Muxes := 1     
+	   2 Input    325 Bit        Muxes := 1     
+	   2 Input    323 Bit        Muxes := 1     
+	   2 Input    321 Bit        Muxes := 1     
+	   2 Input    319 Bit        Muxes := 1     
+	   2 Input    317 Bit        Muxes := 1     
+	   2 Input    315 Bit        Muxes := 1     
+	   2 Input    313 Bit        Muxes := 1     
+	   2 Input    311 Bit        Muxes := 1     
+	   2 Input    309 Bit        Muxes := 1     
+	   2 Input    307 Bit        Muxes := 1     
+	   2 Input    305 Bit        Muxes := 1     
+	   2 Input    303 Bit        Muxes := 1     
+	   2 Input    301 Bit        Muxes := 1     
+	   2 Input    299 Bit        Muxes := 1     
+	   2 Input    297 Bit        Muxes := 1     
+	   2 Input    295 Bit        Muxes := 1     
+	   2 Input    293 Bit        Muxes := 1     
+	   2 Input    291 Bit        Muxes := 1     
+	   2 Input    289 Bit        Muxes := 1     
+	   2 Input    287 Bit        Muxes := 1     
+	   2 Input    285 Bit        Muxes := 1     
+	   2 Input    283 Bit        Muxes := 1     
+	   2 Input    281 Bit        Muxes := 1     
+	   2 Input    279 Bit        Muxes := 1     
+	   2 Input    277 Bit        Muxes := 1     
+	   2 Input    275 Bit        Muxes := 1     
+	   2 Input    273 Bit        Muxes := 1     
+	   2 Input    271 Bit        Muxes := 1     
+	   2 Input    269 Bit        Muxes := 1     
+	   2 Input    267 Bit        Muxes := 1     
+	   2 Input    265 Bit        Muxes := 1     
+	   2 Input    263 Bit        Muxes := 1     
+	   2 Input    261 Bit        Muxes := 1     
+	   2 Input    259 Bit        Muxes := 1     
+	   2 Input    257 Bit        Muxes := 1     
+	   2 Input    255 Bit        Muxes := 1     
+	   2 Input    253 Bit        Muxes := 1     
+	   2 Input    251 Bit        Muxes := 1     
+	   2 Input    249 Bit        Muxes := 1     
+	   2 Input    247 Bit        Muxes := 1     
+	   2 Input    245 Bit        Muxes := 1     
+	   2 Input    243 Bit        Muxes := 1     
+	   2 Input    241 Bit        Muxes := 1     
+	   2 Input    239 Bit        Muxes := 1     
+	   2 Input    237 Bit        Muxes := 1     
+	   2 Input    235 Bit        Muxes := 1     
+	   2 Input    233 Bit        Muxes := 1     
+	   2 Input    231 Bit        Muxes := 1     
+	   2 Input    229 Bit        Muxes := 1     
+	   2 Input    227 Bit        Muxes := 1     
+	   2 Input    225 Bit        Muxes := 1     
+	   2 Input    223 Bit        Muxes := 1     
+	   2 Input    221 Bit        Muxes := 1     
+	   2 Input    219 Bit        Muxes := 1     
+	   2 Input    217 Bit        Muxes := 1     
+	   2 Input    215 Bit        Muxes := 1     
+	   2 Input    213 Bit        Muxes := 1     
+	   2 Input    211 Bit        Muxes := 1     
+	   2 Input    209 Bit        Muxes := 1     
+	   2 Input    207 Bit        Muxes := 1     
+	   2 Input    205 Bit        Muxes := 1     
+	   2 Input    203 Bit        Muxes := 1     
+	   2 Input    201 Bit        Muxes := 1     
+	   2 Input    199 Bit        Muxes := 1     
+	   2 Input    197 Bit        Muxes := 1     
+	   2 Input    195 Bit        Muxes := 1     
+	   2 Input    193 Bit        Muxes := 1     
+	   2 Input    191 Bit        Muxes := 1     
+	   2 Input    189 Bit        Muxes := 1     
+	   2 Input    187 Bit        Muxes := 1     
+	   2 Input    185 Bit        Muxes := 1     
+	   2 Input    183 Bit        Muxes := 1     
+	   2 Input    181 Bit        Muxes := 1     
+	   2 Input    179 Bit        Muxes := 1     
+	   2 Input    177 Bit        Muxes := 1     
+	   2 Input    175 Bit        Muxes := 1     
+	   2 Input    173 Bit        Muxes := 1     
+	   2 Input    171 Bit        Muxes := 1     
+	   2 Input    169 Bit        Muxes := 1     
+	   2 Input    167 Bit        Muxes := 1     
+	   2 Input    165 Bit        Muxes := 1     
+	   2 Input    163 Bit        Muxes := 1     
+	   2 Input    161 Bit        Muxes := 1     
+	   2 Input    159 Bit        Muxes := 1     
+	   2 Input    157 Bit        Muxes := 1     
+	   2 Input    155 Bit        Muxes := 1     
+	   2 Input    153 Bit        Muxes := 1     
+	   2 Input    151 Bit        Muxes := 1     
+	   2 Input    149 Bit        Muxes := 1     
+	   2 Input    147 Bit        Muxes := 1     
+	   2 Input    145 Bit        Muxes := 1     
+	   2 Input    143 Bit        Muxes := 1     
+	   2 Input    141 Bit        Muxes := 1     
+	   2 Input    139 Bit        Muxes := 1     
+	   2 Input    137 Bit        Muxes := 1     
+	   2 Input    135 Bit        Muxes := 1     
+	   2 Input    133 Bit        Muxes := 1     
+	   2 Input    131 Bit        Muxes := 1     
+	   2 Input    129 Bit        Muxes := 1     
+	   2 Input    127 Bit        Muxes := 1     
+	   2 Input    125 Bit        Muxes := 1     
+	   2 Input    123 Bit        Muxes := 1     
+	   2 Input    121 Bit        Muxes := 1     
+	   2 Input    119 Bit        Muxes := 1     
+	   2 Input    117 Bit        Muxes := 1     
+	   2 Input    115 Bit        Muxes := 1     
+	   2 Input    113 Bit        Muxes := 1     
+	   2 Input    111 Bit        Muxes := 1     
+	   2 Input    109 Bit        Muxes := 1     
+	   2 Input    107 Bit        Muxes := 1     
+	   2 Input    105 Bit        Muxes := 1     
+	   2 Input    103 Bit        Muxes := 1     
+	   2 Input    101 Bit        Muxes := 1     
+	   2 Input     99 Bit        Muxes := 1     
+	   2 Input     97 Bit        Muxes := 1     
+	   2 Input     95 Bit        Muxes := 1     
+	   2 Input     93 Bit        Muxes := 1     
+	   2 Input     91 Bit        Muxes := 1     
+	   2 Input     89 Bit        Muxes := 1     
+	   2 Input     87 Bit        Muxes := 1     
+	   2 Input     85 Bit        Muxes := 1     
+	   2 Input     83 Bit        Muxes := 1     
+	   2 Input     81 Bit        Muxes := 1     
+	   2 Input     79 Bit        Muxes := 1     
+	   2 Input     77 Bit        Muxes := 1     
+	   2 Input     75 Bit        Muxes := 1     
+	   2 Input     73 Bit        Muxes := 1     
+	   2 Input     71 Bit        Muxes := 1     
+	   2 Input     69 Bit        Muxes := 1     
+	   2 Input     67 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     61 Bit        Muxes := 1     
+	   2 Input     59 Bit        Muxes := 1     
+	   2 Input     57 Bit        Muxes := 1     
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 1     
+	   2 Input     51 Bit        Muxes := 1     
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 1     
+	   2 Input     45 Bit        Muxes := 1     
+	   2 Input     43 Bit        Muxes := 1     
+	   2 Input     41 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 152   
+	   7 Input     32 Bit        Muxes := 32    
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 200   
+	   4 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 25    
+Module ClkDiv_5Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module spiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     40 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+Module spiMode0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module ClkDiv_66_67kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module format 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module moveCarImmunity__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+Module moveCarImmunity 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+Module clk_scale 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module seven_seg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module segmain 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module LED_matrix 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	              394 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    394 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   7 Input     32 Bit        Muxes := 2     
+	  10 Input     20 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 8     
+Module gen_rand_seq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+Module counter_100M 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design main has unconnected port SW[15]
+WARNING: [Synth 8-3331] design main has unconnected port SW[8]
+WARNING: [Synth 8-3331] design main has unconnected port SW[7]
+WARNING: [Synth 8-3331] design main has unconnected port SW[0]
+INFO: [Synth 8-5546] ROM "genSndRec/CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PmodJSTK_Int/SerialClock/CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[2][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[10][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[3][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[3][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[3][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[3][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[3][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[3][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[11][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[11][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[11][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[11][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[11][3][1] )
+INFO: [Synth 8-5545] ROM "po0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "po5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pt5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][30]' (FDE) to 'game_matrix_reg[4][0][31]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][31]' (FDE) to 'game_matrix_reg[4][0][29]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][29]' (FDE) to 'game_matrix_reg[4][0][28]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][28]' (FDE) to 'game_matrix_reg[4][0][27]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][27]' (FDE) to 'game_matrix_reg[4][0][26]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][26]' (FDE) to 'game_matrix_reg[4][0][25]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][25]' (FDE) to 'game_matrix_reg[4][0][24]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][24]' (FDE) to 'game_matrix_reg[4][0][23]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][23]' (FDE) to 'game_matrix_reg[4][0][22]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][22]' (FDE) to 'game_matrix_reg[4][0][21]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][21]' (FDE) to 'game_matrix_reg[4][0][20]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][20]' (FDE) to 'game_matrix_reg[4][0][19]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][19]' (FDE) to 'game_matrix_reg[4][0][18]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][18]' (FDE) to 'game_matrix_reg[4][0][17]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][17]' (FDE) to 'game_matrix_reg[4][0][16]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][16]' (FDE) to 'game_matrix_reg[4][0][15]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][15]' (FDE) to 'game_matrix_reg[4][0][14]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][14]' (FDE) to 'game_matrix_reg[4][0][13]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][13]' (FDE) to 'game_matrix_reg[4][0][12]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][12]' (FDE) to 'game_matrix_reg[4][0][11]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][11]' (FDE) to 'game_matrix_reg[4][0][10]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][10]' (FDE) to 'game_matrix_reg[4][0][9]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][9]' (FDE) to 'game_matrix_reg[4][0][8]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][8]' (FDE) to 'game_matrix_reg[4][0][7]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][7]' (FDE) to 'game_matrix_reg[4][0][6]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][6]' (FDE) to 'game_matrix_reg[4][0][5]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][5]' (FDE) to 'game_matrix_reg[4][0][4]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][4]' (FDE) to 'game_matrix_reg[4][0][3]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][3]' (FDE) to 'game_matrix_reg[4][0][2]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][0][2]' (FDE) to 'game_matrix_reg[4][0][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][0][1] )
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][30]' (FDE) to 'game_matrix_reg[4][1][31]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][31]' (FDE) to 'game_matrix_reg[4][1][29]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][29]' (FDE) to 'game_matrix_reg[4][1][28]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][28]' (FDE) to 'game_matrix_reg[4][1][27]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][27]' (FDE) to 'game_matrix_reg[4][1][26]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][26]' (FDE) to 'game_matrix_reg[4][1][25]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][25]' (FDE) to 'game_matrix_reg[4][1][24]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][24]' (FDE) to 'game_matrix_reg[4][1][23]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][23]' (FDE) to 'game_matrix_reg[4][1][22]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][22]' (FDE) to 'game_matrix_reg[4][1][21]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][21]' (FDE) to 'game_matrix_reg[4][1][20]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][20]' (FDE) to 'game_matrix_reg[4][1][19]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][19]' (FDE) to 'game_matrix_reg[4][1][18]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][18]' (FDE) to 'game_matrix_reg[4][1][17]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][17]' (FDE) to 'game_matrix_reg[4][1][16]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][16]' (FDE) to 'game_matrix_reg[4][1][15]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][15]' (FDE) to 'game_matrix_reg[4][1][14]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][14]' (FDE) to 'game_matrix_reg[4][1][13]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][13]' (FDE) to 'game_matrix_reg[4][1][12]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][12]' (FDE) to 'game_matrix_reg[4][1][11]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][11]' (FDE) to 'game_matrix_reg[4][1][10]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][10]' (FDE) to 'game_matrix_reg[4][1][9]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][9]' (FDE) to 'game_matrix_reg[4][1][8]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][8]' (FDE) to 'game_matrix_reg[4][1][7]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][7]' (FDE) to 'game_matrix_reg[4][1][6]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][6]' (FDE) to 'game_matrix_reg[4][1][5]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][5]' (FDE) to 'game_matrix_reg[4][1][4]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][4]' (FDE) to 'game_matrix_reg[4][1][3]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][3]' (FDE) to 'game_matrix_reg[4][1][2]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][1][2]' (FDE) to 'game_matrix_reg[4][1][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][30]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][31]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][29]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][28]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][27]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][26]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][25]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][24]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][23]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][22]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][21]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][20]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][19]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][18]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][17]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][16]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][15]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][14]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][13]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][12]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][11]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][10]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][9]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][8]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][7]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][6]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][5]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][4]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][3]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][2][2]' (FDE) to 'game_matrix_reg[4][2][1]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][30]' (FDE) to 'game_matrix_reg[4][3][31]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][31]' (FDE) to 'game_matrix_reg[4][3][29]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][29]' (FDE) to 'game_matrix_reg[4][3][28]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][28]' (FDE) to 'game_matrix_reg[4][3][27]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][27]' (FDE) to 'game_matrix_reg[4][3][26]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][26]' (FDE) to 'game_matrix_reg[4][3][25]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][25]' (FDE) to 'game_matrix_reg[4][3][24]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][24]' (FDE) to 'game_matrix_reg[4][3][23]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][23]' (FDE) to 'game_matrix_reg[4][3][22]'
+INFO: [Synth 8-3886] merging instance 'game_matrix_reg[4][3][22]' (FDE) to 'game_matrix_reg[4][3][21]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][7][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[4][8][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[5][0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[5][1][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[12][6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[13][0][1] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[13][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[13][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[13][3][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[13][4][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[13][5][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[6][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[6][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[6][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[6][3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[6][4][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[6][4][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[14][0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[14][1][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[14][1][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\game_matrix_reg[15][0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[15][0][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\game_matrix_reg[15][1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[15][1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\game_matrix_reg[15][2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_matrix_reg[15][2][0] )
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design gen_rand_seq has unconnected port scale[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mat/state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (main_for_7_seg/\pos_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (rand/\pi_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rand/\pi_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (main_for_7_seg/seven_seg/\anode_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:22 ; elapsed = 00:06:32 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |main__GB0     |           1|       359|
+|2     |main__GB1     |           1|       124|
+|3     |main__GB2     |           1|         7|
+|4     |main__GB3     |           1|       131|
+|5     |main__GB4     |           1|       162|
+|6     |main__GB5     |           1|     10311|
+|7     |main__GB6     |           1|       205|
+|8     |main__GB7     |           1|        49|
+|9     |main__GB8     |           1|        93|
+|10    |main__GB9     |           1|       857|
+|11    |main__GB10    |           1|        31|
+|12    |main__GB11    |           1|        93|
+|13    |main__GB12    |           1|       604|
+|14    |main__GB13    |           1|       727|
+|15    |main__GB14    |           1|        93|
+|16    |main__GB15    |           1|       943|
+|17    |main__GB16    |           1|        62|
+|18    |main__GB17    |           1|        62|
+|19    |main__GB18    |           1|        93|
+|20    |main__GB19    |           1|       124|
+|21    |main__GB20    |           1|       504|
+|22    |main__GB21    |           1|        62|
+|23    |main__GB22    |           1|        62|
+|24    |main__GB23    |           1|        62|
+|25    |main__GB24    |           1|       432|
+|26    |main__GB25    |           1|       284|
+|27    |main__GB26    |           1|        62|
+|28    |main__GB27    |           1|        62|
+|29    |main__GB28    |           1|       224|
+|30    |main__GB29    |           1|       460|
+|31    |main__GB30    |           1|       189|
+|32    |main__GB31    |           1|       124|
+|33    |main__GB32    |           1|        93|
+|34    |main__GB33    |           1|       413|
+|35    |main__GB34    |           1|        31|
+|36    |main__GB35    |           1|        31|
+|37    |main__GB36    |           1|        93|
+|38    |main__GB37    |           1|       444|
+|39    |main__GB38    |           1|        31|
+|40    |main__GB39    |           1|       124|
+|41    |main__GB40    |           1|         0|
+|42    |main__GB45    |           1|         0|
+|43    |main__GB46    |           1|         0|
+|44    |main__GB47    |           1|         0|
+|45    |main__GB49    |           1|         0|
+|46    |main__GB52    |           1|         0|
+|47    |main__GB56    |           1|         0|
+|48    |main__GB60    |           1|       417|
+|49    |main__GB61    |           1|        93|
+|50    |main__GB62    |           1|       286|
+|51    |main__GB63    |           1|        62|
+|52    |main__GB64    |           1|       412|
+|53    |main__GB65    |           1|        62|
+|54    |main__GB66    |           1|        62|
+|55    |main__GB67    |           1|         0|
+|56    |main__GB69    |           1|         0|
+|57    |main__GB71    |           1|       394|
+|58    |main__GB72    |           1|      8637|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:33 ; elapsed = 00:06:45 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_37/\game_matrix_reg[2][8][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][7][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_13/\game_matrix_reg[6][8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\game_matrix_reg[14][3][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\game_matrix_reg[14][4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\game_matrix_reg[14][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\game_matrix_reg[14][6][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_15/\game_matrix_reg[14][7][31] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:41 ; elapsed = 00:06:53 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |main__GB0     |           1|       359|
+|2     |main__GB2     |           1|         7|
+|3     |main__GB3     |           1|         7|
+|4     |main__GB4     |           1|         7|
+|5     |main__GB5     |           1|      1589|
+|6     |main__GB6     |           1|        19|
+|7     |main__GB7     |           1|        18|
+|8     |main__GB9     |           1|        20|
+|9     |main__GB12    |           1|        15|
+|10    |main__GB13    |           1|        14|
+|11    |main__GB15    |           1|        13|
+|12    |main__GB28    |           1|         7|
+|13    |main__GB29    |           1|         2|
+|14    |main__GB30    |           1|         3|
+|15    |main__GB33    |           1|        10|
+|16    |main__GB37    |           1|        10|
+|17    |main__GB62    |           1|         7|
+|18    |main__GB64    |           1|         9|
+|19    |main__GB71    |           1|       320|
+|20    |main__GB72    |           1|      8366|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:44 ; elapsed = 00:06:56 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:45 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:45 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:46 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:46 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:46 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:46 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   461|
+|3     |LUT1   |   111|
+|4     |LUT2   |   654|
+|5     |LUT3   |   615|
+|6     |LUT4   |   849|
+|7     |LUT5   |   364|
+|8     |LUT6   |   469|
+|9     |MUXF7  |     4|
+|10    |MUXF8  |     1|
+|11    |FDRE   |  1536|
+|12    |FDSE   |     3|
+|13    |IBUF   |    17|
+|14    |OBUF   |    22|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------+------+
+|      |Instance         |Module            |Cells |
++------+-----------------+------------------+------+
+|1     |top              |                  |  5109|
+|2     |  PmodJSTK_Int   |PmodJSTK          |   140|
+|3     |    SPI_Ctrl     |spiCtrl           |    83|
+|4     |    SPI_Int      |spiMode0          |    30|
+|5     |    SerialClock  |ClkDiv_66_67kHz   |    27|
+|6     |  counter        |counter_100M      |   274|
+|7     |  genSndRec      |ClkDiv_5Hz        |    62|
+|8     |  main_for_7_seg |segmain           |  1815|
+|9     |    seven_seg    |seven_seg         |    31|
+|10    |  mat            |LED_matrix        |   796|
+|11    |  my_format      |format            |     3|
+|12    |  player1        |moveCarImmunity   |   140|
+|13    |  player2        |moveCarImmunity_0 |   140|
+|14    |  rand           |gen_rand_seq      |   200|
++------+-----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:46 ; elapsed = 00:06:58 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:06 ; elapsed = 00:06:26 . Memory (MB): peak = 1441.398 ; gain = 331.891
+Synthesis Optimization Complete : Time (s): cpu = 00:05:46 ; elapsed = 00:06:59 . Memory (MB): peak = 1441.398 ; gain = 1179.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1441.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+454 Infos, 150 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:48 ; elapsed = 00:07:02 . Memory (MB): peak = 1441.398 ; gain = 1192.039
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1441.398 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  3 18:44:01 2019...
