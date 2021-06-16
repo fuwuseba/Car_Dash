@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../re/ClkDiv_5Hz.v" \
+"../../../../../re/ClkDiv_66_67kHz.v" \
+"../../../../Car_Dash.srcs/sources_1/new/LED_matrix.v" \
+"../../../../../re/PmodJSTK.v" \
+"../../../../../re/SPImode0.v" \
+"../../../../Car_Dash.srcs/sources_1/new/clk_scale.v" \
+"../../../../Car_Dash.srcs/sources_1/new/counter_100M.v" \
+"../../../../../re/format.v" \
+"../../../../../gen_rand_seq.v" \
+"../../../../../moveCarImmunity.v" \
+"../../../../../re/spiCtrl.v" \
+"../../../../../moveAlive.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

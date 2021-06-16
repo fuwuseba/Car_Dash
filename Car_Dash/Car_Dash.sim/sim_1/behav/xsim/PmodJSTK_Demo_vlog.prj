@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../re/ClkDiv_5Hz.v" \
+"../../../../../re/ClkDiv_66_67kHz.v" \
+"../../../../../re/PmodJSTK.v" \
+"../../../../../re/SPImode0.v" \
+"../../../../../re/format.v" \
+"../../../../../re/formatting_buttons.v" \
+"../../../../../re/spiCtrl.v" \
+"../../../../../re/Formatting JSTK.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

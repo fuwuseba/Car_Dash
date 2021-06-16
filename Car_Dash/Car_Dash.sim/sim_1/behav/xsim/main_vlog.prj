@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../re/ClkDiv_5Hz.v" \
+"../../../../../re/ClkDiv_66_67kHz.v" \
+"../../../../Car_Dash.srcs/sources_1/new/LED_matrix.v" \
+"../../../../../re/PmodJSTK.v" \
+"../../../../../re/SPImode0.v" \
+"../../../../Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" \
+"../../../../Car_Dash.srcs/sources_1/new/counter_100M.v" \
+"../../../../../re/format.v" \
+"../../../../Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" \
+"../../../../Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" \
+"../../../../Car_Dash.srcs/sources_1/new/segmain.v" \
+"../../../../../7 seg/seven_seg.v" \
+"../../../../../re/spiCtrl.v" \
+"../../../../Car_Dash.srcs/sources_1/imports/V2/mainV2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

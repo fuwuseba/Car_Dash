@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module segmain
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
