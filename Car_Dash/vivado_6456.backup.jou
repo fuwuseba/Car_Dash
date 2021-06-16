@@ -1,0 +1,182 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 26 17:48:17 2019
+# Process ID: 6456
+# Current directory: S:/CS2204/Car_Dash/Car_Dash
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12336 S:\CS2204\Car_Dash\Car_Dash\Car_Dash.xpr
+# Log file: S:/CS2204/Car_Dash/Car_Dash/vivado.log
+# Journal file: S:/CS2204/Car_Dash/Car_Dash\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/CS2204/Car_Dash/Car_Dash/Car_Dash.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+close_hw
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/moveAlive.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/moveAlive.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+add_files -norecurse S:/CS2204/Car_Dash/moveCar.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/moveAlive.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/moveAlive.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/moveAlive.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+add_files -norecurse S:/CS2204/Car_Dash/moveCarImmunity.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {{S:/CS2204/Car_Dash/re/Formatting JSTK.v} S:/CS2204/Car_Dash/re/ssdCtrl.v S:/CS2204/Car_Dash/re/SPImode0.v S:/CS2204/Car_Dash/re/Binary_To_BCD.v S:/CS2204/Car_Dash/re/spiCtrl.v S:/CS2204/Car_Dash/re/PmodJSTK_Demo.v S:/CS2204/Car_Dash/re/PmodJSTK.v S:/CS2204/Car_Dash/re/ClkDiv_5Hz.v S:/CS2204/Car_Dash/re/ClkDiv_66_67kHz.v S:/CS2204/Car_Dash/re/formatting_buttons.v S:/CS2204/Car_Dash/re/format.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{S:/CS2204/Car_Dash/re/Formatting JSTK.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/PmodJSTK.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/ClkDiv_5Hz.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/format.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/formatting_buttons.v] -no_script -reset -force -quiet
+remove_files  {{S:/CS2204/Car_Dash/re/Formatting JSTK.v} S:/CS2204/Car_Dash/re/PmodJSTK.v S:/CS2204/Car_Dash/re/ClkDiv_5Hz.v S:/CS2204/Car_Dash/re/format.v S:/CS2204/Car_Dash/re/formatting_buttons.v}
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/PmodJSTK_Demo.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/ssdCtrl.v] -no_script -reset -force -quiet
+remove_files  {S:/CS2204/Car_Dash/re/PmodJSTK_Demo.v S:/CS2204/Car_Dash/re/ssdCtrl.v}
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/Binary_To_BCD.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/ClkDiv_66_67kHz.v] -no_script -reset -force -quiet
+remove_files  {S:/CS2204/Car_Dash/re/Binary_To_BCD.v S:/CS2204/Car_Dash/re/ClkDiv_66_67kHz.v}
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/spiCtrl.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/re/SPImode0.v] -no_script -reset -force -quiet
+remove_files  {S:/CS2204/Car_Dash/re/spiCtrl.v S:/CS2204/Car_Dash/re/SPImode0.v}
+export_ip_user_files -of_objects  [get_files S:/CS2204/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/moveCheck.v] -no_script -reset -force -quiet
+remove_files  S:/CS2204/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/moveCheck.v
+add_files -norecurse {{S:/CS2204/Car_Dash/re/Formatting JSTK.v} S:/CS2204/Car_Dash/re/ssdCtrl.v S:/CS2204/Car_Dash/re/SPImode0.v S:/CS2204/Car_Dash/re/Binary_To_BCD.v S:/CS2204/Car_Dash/re/spiCtrl.v S:/CS2204/Car_Dash/re/PmodJSTK.v S:/CS2204/Car_Dash/re/formatting_buttons.v S:/CS2204/Car_Dash/re/ClkDiv_5Hz.v S:/CS2204/Car_Dash/re/ClkDiv_66_67kHz.v S:/CS2204/Car_Dash/re/format.v}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_simulation
+source moveAlive.tcl
+close_sim
+launch_simulation
+source moveAlive.tcl
+add_force {/moveAlive/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+close_sim
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+update_files -from_files S:/CS2204/Car_Dash/Main.v -to_files S:/CS2204/Car_Dash/moveAlive.v -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property is_enabled false [get_files  S:/CS2204/Car_Dash/moveCar.v]
+set_property is_enabled false [get_files  S:/CS2204/Car_Dash/re/ssdCtrl.v]
+set_property is_enabled false [get_files  S:/CS2204/Car_Dash/re/Binary_To_BCD.v]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {S:/CS2204/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

@@ -1,0 +1,1044 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May  3 16:48:10 2019
+# Process ID: 14380
+# Current directory: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent300 C:\Users\Rohan Valimbe\Desktop\Car_Dash\Car_Dash\Car_Dash.xpr
+# Log file: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/vivado.log
+# Journal file: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.xpr}
+INFO: [Project 1-313] Project file moved from 'S:/Car_Dash/Car_Dash' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 689.262 ; gain = 123.473
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/main.v} {C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:06:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:06:32 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709667A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1701.621 ; gain = 888.578
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:150]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:162]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:170]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_scale
+Compiling module xil_defaultlib.ClkDiv_5Hz
+Compiling module xil_defaultlib.counter_100M
+Compiling module xil_defaultlib.gen_rand_seq
+Compiling module xil_defaultlib.moveCarImmunity
+Compiling module xil_defaultlib.spiCtrl
+Compiling module xil_defaultlib.spiMode0
+Compiling module xil_defaultlib.ClkDiv_66_67kHz
+Compiling module xil_defaultlib.PmodJSTK
+Compiling module xil_defaultlib.format
+Compiling module xil_defaultlib.LED_matrix
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Rohan -notrace
+couldn't read file "C:/Users/Rohan": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Fri May  3 17:16:59 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1739.395 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -view {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1806.914 ; gain = 34.230
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1806.914 ; gain = 67.520
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 us
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:20:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:20:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+save_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+WARNING: [VRFC 10-3248] data object 'pos' is already declared [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:335]
+ERROR: [VRFC 10-3703] second declaration of 'pos' ignored [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:335]
+ERROR: [VRFC 10-2865] module 'main' ignored due to previous errors [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run impl_1
+reset_run synth_1
+close_project
+open_project {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+WARNING: [VRFC 10-3248] data object 'pos' is already declared [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:335]
+ERROR: [VRFC 10-3703] second declaration of 'pos' ignored [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:335]
+ERROR: [VRFC 10-2865] module 'main' ignored due to previous errors [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:146]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:158]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:166]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_scale
+Compiling module xil_defaultlib.ClkDiv_5Hz
+Compiling module xil_defaultlib.counter_100M
+Compiling module xil_defaultlib.gen_rand_seq
+Compiling module xil_defaultlib.moveCarImmunity
+Compiling module xil_defaultlib.spiCtrl
+Compiling module xil_defaultlib.spiMode0
+Compiling module xil_defaultlib.ClkDiv_66_67kHz
+Compiling module xil_defaultlib.PmodJSTK
+Compiling module xil_defaultlib.format
+Compiling module xil_defaultlib.LED_matrix
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -view {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1895.797 ; gain = 0.000
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 100 us
+run 1000 us
+run 10000 us
+run 10000 us
+run 10000 us
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:27:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:27:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+save_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:28:41 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:28:41 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:146]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:158]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:166]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_scale
+Compiling module xil_defaultlib.ClkDiv_5Hz
+Compiling module xil_defaultlib.counter_100M
+Compiling module xil_defaultlib.gen_rand_seq
+Compiling module xil_defaultlib.moveCarImmunity
+Compiling module xil_defaultlib.spiCtrl
+Compiling module xil_defaultlib.spiMode0
+Compiling module xil_defaultlib.ClkDiv_66_67kHz
+Compiling module xil_defaultlib.PmodJSTK
+Compiling module xil_defaultlib.format
+Compiling module xil_defaultlib.LED_matrix
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -view {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1953.535 ; gain = 0.000
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 us
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709667A
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:38:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:38:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <segmain> not found while processing module instance <main_for_7_seg> [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:408]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/main.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/main.v}}
+remove_files  {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/main.v}}
+WARNING: [Vivado 12-818] No files matched 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/main.v'
+close [ open {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v} w ]
+add_files {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module segmain
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:146]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:158]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:166]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_scale
+Compiling module xil_defaultlib.ClkDiv_5Hz
+Compiling module xil_defaultlib.counter_100M
+Compiling module xil_defaultlib.gen_rand_seq
+Compiling module xil_defaultlib.moveCarImmunity
+Compiling module xil_defaultlib.spiCtrl
+Compiling module xil_defaultlib.spiMode0
+Compiling module xil_defaultlib.ClkDiv_66_67kHz
+Compiling module xil_defaultlib.PmodJSTK
+Compiling module xil_defaultlib.format
+Compiling module xil_defaultlib.LED_matrix
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.segmain
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -view {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+WARNING: Simulation object /main/seven_seg/anode was not found in the design.
+WARNING: Simulation object /main/seven_seg/segment was not found in the design.
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1955.656 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:43:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:43:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+save_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module segmain
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:144]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:156]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:164]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_scale
+Compiling module xil_defaultlib.ClkDiv_5Hz
+Compiling module xil_defaultlib.counter_100M
+Compiling module xil_defaultlib.gen_rand_seq
+Compiling module xil_defaultlib.moveCarImmunity
+Compiling module xil_defaultlib.spiCtrl
+Compiling module xil_defaultlib.spiMode0
+Compiling module xil_defaultlib.ClkDiv_66_67kHz
+Compiling module xil_defaultlib.PmodJSTK
+Compiling module xil_defaultlib.format
+Compiling module xil_defaultlib.LED_matrix
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.segmain
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -view {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1958.832 ; gain = 0.000
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709667A
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292709667A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709667A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_5Hz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_5Hz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/ClkDiv_66_67kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv_66_67kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/LED_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_matrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/PmodJSTK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PmodJSTK
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/SPImode0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiMode0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/clk_scaleV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/counter_100M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_100M
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/format.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module format
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/gen_rand_seqV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_rand_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/Car_Dash/moveCarImmunityV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module moveCarImmunity
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/new/segmain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module segmain
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/7 seg/seven_seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/re/spiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3d3b8403e0354f729f0a6d6285337f32 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:144]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:156]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 27 for port 'scale' [C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.srcs/sources_1/imports/V2/mainV2.v:164]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_scale
+Compiling module xil_defaultlib.ClkDiv_5Hz
+Compiling module xil_defaultlib.counter_100M
+Compiling module xil_defaultlib.gen_rand_seq
+Compiling module xil_defaultlib.moveCarImmunity
+Compiling module xil_defaultlib.spiCtrl
+Compiling module xil_defaultlib.spiMode0
+Compiling module xil_defaultlib.ClkDiv_66_67kHz
+Compiling module xil_defaultlib.PmodJSTK
+Compiling module xil_defaultlib.format
+Compiling module xil_defaultlib.LED_matrix
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.segmain
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -view {{C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/main_behav.wcfg}
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1960.480 ; gain = 0.000
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 17:59:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 17:59:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709667A
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 18:10:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 18:10:26 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2007.223 ; gain = 46.215
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 18:21:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 18:21:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 18:26:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 18:26:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709667A
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri May  3 18:36:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/synth_1/runme.log
+[Fri May  3 18:36:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Rohan Valimbe/Desktop/Car_Dash/Car_Dash/Car_Dash.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  3 18:54:46 2019...

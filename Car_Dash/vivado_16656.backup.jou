@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  1 00:27:20 2019
+# Process ID: 16656
+# Current directory: S:/Car_Dash/Car_Dash
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10704 S:\Car_Dash\Car_Dash\Car_Dash.xpr
+# Log file: S:/Car_Dash/Car_Dash/vivado.log
+# Journal file: S:/Car_Dash/Car_Dash\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/Car_Dash/Car_Dash/Car_Dash.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source main.tcl
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/main/Buttons} -radix hex {0 0ns}
+add_force {/main/jstkData} -radix unsigned {600 0ns}
+run 100 us
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 100 us
+run 100 us
+run 100 us
+current_wave_config {Untitled 1}
+add_wave {{/main/clk_scl/clk_scaled}} 
+current_wave_config {Untitled 1}
+add_wave {{/main/mat/cnt_100M}} 
+current_wave_config {Untitled 1}
+add_wave {{/main/clk_scl/cnt}} 
+relaunch_sim
+save_wave_config {S:/Car_Dash/Car_Dash/main_behav.wcfg}
+add_files -fileset sim_1 -norecurse S:/Car_Dash/Car_Dash/main_behav.wcfg
+set_property xsim.view S:/Car_Dash/Car_Dash/main_behav.wcfg [get_filesets sim_1]
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/main/Buttons} -radix hex {0 0ns}
+add_force {/main/jstkData} -radix unsigned {600 0ns}
+run 100 us
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 100 us
+run 100 us
+save_wave_config {S:/Car_Dash/Car_Dash/main_behav.wcfg}
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 50 us
+run 100 us
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/main/Buttons} -radix hex {0 0ns}
+add_force {/main/jstkData} -radix unsigned {600 0ns}
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {0 0ns}
+run 100 us
+report_drivers {/main/Buttons}
+add_force {/main/Buttons} -radix hex {2 0ns}
+run 25 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 50 us
+add_force {/main/Buttons} -radix hex {0 0ns}
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 25 us
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/main/Buttons} -radix hex {0 0ns}
+add_force {/main/jstkData} -radix unsigned {600 0ns}
+run 50 us
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {2 0ns}
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {0 0ns}
+run 100 us
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/main/Buttons} -radix hex {0 0ns}
+add_force {/main/jstkData} -radix unsigned {600 0ns}
+run 100 us
+run 50 us
+run 100 us
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+relaunch_sim
+add_force {/main/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/main/Buttons} -radix hex {0 0ns}
+add_force {/main/jstkData} -radix unsigned {600 0ns}
+run 100 us
+run 100 us
+run 50 us
+run 25 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {2 0ns}
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+add_force {/main/Buttons} -radix hex {1 0ns}
+run 10 us
+add_force {/main/Buttons} -radix hex {0 0ns}
+run 100 us
+save_wave_config {S:/Car_Dash/Car_Dash/main_behav.wcfg}
+close_sim

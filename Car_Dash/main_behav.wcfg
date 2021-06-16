@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="main_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="main" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3072357491fs"></ZoomStartTime>
+      <ZoomEndTime time="5313528502fs"></ZoomEndTime>
+      <Cursor1Time time="4940000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="277"></NameColumnWidth>
+      <ValueColumnWidth column_width="221"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/main/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/clk_scaled" type="logic">
+      <obj_property name="ElementShortName">clk_scaled</obj_property>
+      <obj_property name="ObjectShortName">clk_scaled</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/cnt_100M" type="array">
+      <obj_property name="ElementShortName">cnt_100M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_100M[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/moveReset" type="logic">
+      <obj_property name="ElementShortName">moveReset</obj_property>
+      <obj_property name="ObjectShortName">moveReset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/Buttons" type="array">
+      <obj_property name="ElementShortName">Buttons[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Buttons[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group69" type="group">
+      <obj_property name="label">Player1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/main/player1/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/nextRow" type="array">
+         <obj_property name="ElementShortName">nextRow[5:0]</obj_property>
+         <obj_property name="ObjectShortName">nextRow[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/headRow" type="array">
+         <obj_property name="ElementShortName">headRow[5:0]</obj_property>
+         <obj_property name="ObjectShortName">headRow[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/position" type="array">
+         <obj_property name="ElementShortName">position[2:0]</obj_property>
+         <obj_property name="ObjectShortName">position[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/attemptMove" type="array">
+         <obj_property name="ElementShortName">attemptMove[1:0]</obj_property>
+         <obj_property name="ObjectShortName">attemptMove[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/moveInput" type="array">
+         <obj_property name="ElementShortName">moveInput[1:0]</obj_property>
+         <obj_property name="ObjectShortName">moveInput[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/moveResult" type="array">
+         <obj_property name="ElementShortName">moveResult[2:0]</obj_property>
+         <obj_property name="ObjectShortName">moveResult[2:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/immunity" type="logic">
+         <obj_property name="ElementShortName">immunity</obj_property>
+         <obj_property name="ObjectShortName">immunity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player1/immuneCount" type="array">
+         <obj_property name="ElementShortName">immuneCount[31:0]</obj_property>
+         <obj_property name="ObjectShortName">immuneCount[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/main/jstkData" type="array">
+      <obj_property name="ElementShortName">jstkData[39:0]</obj_property>
+      <obj_property name="ObjectShortName">jstkData[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/Joystick" type="array">
+      <obj_property name="ElementShortName">Joystick[1:0]</obj_property>
+      <obj_property name="ObjectShortName">Joystick[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/wins1" type="array">
+      <obj_property name="ElementShortName">wins1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">wins1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/wins2" type="array">
+      <obj_property name="ElementShortName">wins2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">wins2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group81" type="group">
+      <obj_property name="label">Player2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/main/player2/nextRow" type="array">
+         <obj_property name="ElementShortName">nextRow[5:0]</obj_property>
+         <obj_property name="ObjectShortName">nextRow[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/headRow" type="array">
+         <obj_property name="ElementShortName">headRow[5:0]</obj_property>
+         <obj_property name="ObjectShortName">headRow[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/position" type="array">
+         <obj_property name="ElementShortName">position[2:0]</obj_property>
+         <obj_property name="ObjectShortName">position[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/attemptMove" type="array">
+         <obj_property name="ElementShortName">attemptMove[1:0]</obj_property>
+         <obj_property name="ObjectShortName">attemptMove[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/moveResult" type="array">
+         <obj_property name="ElementShortName">moveResult[2:0]</obj_property>
+         <obj_property name="ObjectShortName">moveResult[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/immunity" type="logic">
+         <obj_property name="ElementShortName">immunity</obj_property>
+         <obj_property name="ObjectShortName">immunity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/immuneCount" type="array">
+         <obj_property name="ElementShortName">immuneCount[31:0]</obj_property>
+         <obj_property name="ObjectShortName">immuneCount[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/moveInput" type="array">
+         <obj_property name="ElementShortName">moveInput[1:0]</obj_property>
+         <obj_property name="ObjectShortName">moveInput[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/main/player2/immuneCycles" type="array">
+         <obj_property name="ElementShortName">immuneCycles[31:0]</obj_property>
+         <obj_property name="ObjectShortName">immuneCycles[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/main/state_seg" type="array">
+      <obj_property name="ElementShortName">state_seg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state_seg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/digit" type="array">
+      <obj_property name="ElementShortName">digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/pos" type="array">
+      <obj_property name="ElementShortName">pos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pos[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/main_for_7_seg/segment" type="array">
+      <obj_property name="ElementShortName">segment[6:0]</obj_property>
+      <obj_property name="ObjectShortName">segment[6:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/main/main_for_7_seg/anode" type="array">
+      <obj_property name="ElementShortName">anode[7:0]</obj_property>
+      <obj_property name="ObjectShortName">anode[7:0]</obj_property>
+   </wvobject>
+</wave_config>
